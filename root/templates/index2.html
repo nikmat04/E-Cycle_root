@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="{% static 'assets2/style2.css' %}"/>
+    <script src="{% static 'https://kit.fontawesome.com/bc395aa669.js' %}" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">BOOK NOW</h1>
+            <form action="{%url 'user'%}"method="POST">
+                {% csrf_token %}
+                {{form}}
+    
+                <div class="input-group">
+                    <div class="input-field" id="name">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Fullname" name="fullname" required/>
+                    </div>
+                    <div class="input-field" id="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="email" required/>
+                    </div>
+                    <div class="input-field" id="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" placeholder="Contact No" name="contact" required/>
+                    </div>
+                    <div class="input-field" id="address">
+                        
+                        <i class="fa-solid fa-house"></i>
+                        <textarea placeholder="Address" name="address"></textarea>
+                        
+                    </div>
+                    <div class="input-field" id="pin">
+                        <input type="text" placeholder="Pincode" name="pincode" required/>
+                    </div>
+                    <div class="input-field" id="device">
+                        <i class="fa-solid fa-laptop"></i>
+                        <input type="text" placeholder="What do you want to sell?" name="device" required/>
+                    </div>
+                    <div class="input-field" id="defects">
+                        <textarea type="email" placeholder="Mention the Defects (For eg: screen is cracked, hinges are broken)" name="defects" required></textarea>
+                    </div>
+                    <div class="input-field" id="date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="txt" onfocus="(this.type = 'date')" placeholder="Schedule a Date" id="date" name="date"/>
+                    </div>
+                    <div class="btn-field">
+                        <button type="submit">Book</button>
+                    </div>
+
+                </div>
+                
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

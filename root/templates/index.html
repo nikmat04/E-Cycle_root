@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+        <title>
+            E-Waste Management
+        </title>
+        <link rel="stylesheet" href="{% static 'assets1/style.css' %}">
+        <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+<link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+<link href="{% static 'https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;300;400;700&display=swap' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="{% static 'assets1/Logo.png' %}">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#service">SERVICES</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contactus">CONTACT US</a></li>
+                        <li><a href="{% url 'book' %}" target="_blank">BOOK NOW</a></li>
+
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- --------Home--------  -->
+        <section class="home" id="home">
+            <div class="text">
+                <h1>E-CYCLE</h1>
+                <p>Turning Trash into Tech: Your E-Waste, Our Responsibility!</p>
+                <a href="{% url 'book' %}" target="_blank" class="button">BOOK NOW</a>
+            </div>
+                
+        </section>
+
+     <!-- --------Services--------  -->
+        
+        <section class="service" id="service">
+            <h1>OUR SERVICES</h1>
+            <p>
+                E-cycle services offer convenient solutions for disposing of your electrical and electronic waste while also providing competitive compensation for your e-waste. We accept all kinds of electrical and electronic goods and, if necessary, ensure data security through proper decommissioning. You can access us by following these 3 steps:
+            </p>
+            <div class="row">
+                <div class="col">
+                    <h3>REGISTER</h3>
+                    <p>
+                        To register for E-Cycle, simply click the "BOOK NOW" button and provide your personal 
+                        details along with information about your device, including any defects it may have. 
+                         
+                         
+                    </p>
+
+                </div>
+                <div class="col">
+                    <h3>SCHEDULE A DATE</h3>
+                    <p>
+                        Schedule a date according to your convenience using our website. Our employee will 
+                        come to your address at the specified date and analyse your devices carefully.
+                    </p>
+
+                </div>
+                <div class="col">
+                    <h3>GET THE BEST QUOTE</h3>
+                    <p>
+                        Based on the analysis of our employee, E-cycle will offer you the best quotes based on 
+                        the condition and age of your device.
+                    </p>
+
+                </div>
+            </div>
+            
+        </section>
+        <!-- --------About--------  -->
+        <section class="about" id="about">
+            <h1>ABOUT</h1>
+            <p>
+                At E-Cycle, we are on a mission to revolutionize the way electronic waste is managed and recycled. With the rapid pace of technological advancements, electronic devices have become an integral part of our daily lives. However, this technological progress has also led to an unprecedented increase in electronic waste (e-waste), presenting both environmental and health challenges. E-Cycle was born out of a shared passion for environmental sustainability and a desire to make a positive impact on our planet. We recognized the urgent need for responsible e-waste disposal, and we set out to create a platform that not only addresses this issue but also rewards individuals for their commitment to a greener future.
+            </p>
+            <h3>OUR MISSION</h3>
+            <p>Our primary mission is to provide a convenient and eco-friendly solution for individuals and businesses to dispose of their old and unwanted electronic devices. By doing so, we aim to:</p>
+            <p>1. Promote Environmental Sustainability: We understand the harmful impact that improper e-waste disposal can have on the environment. By recycling electronics responsibly, we reduce the carbon footprint and minimize hazardous waste.</p>
+            <p>2. Empower Communities: We believe in the power of collective action. E-Cycle empowers individuals to take charge of their e-waste disposal while rewarding them for their contributions.</p>
+            <p>3. Support a Circular Economy: Our efforts extend beyond waste collection. We work diligently to refurbish and reuse electronic devices whenever possible, ensuring they find new homes and reducing the demand for new manufacturing.</p>
+
+        </section>
+
+        <!-- --------Contact us--------  -->
+        <section class="contact" id="contactus">
+            <h2> CONTACT US</h2> 
+            
+            <img src="{% static 'assets1/Logo.png' %}">
+            
+            
+            <pre>Email : ecycle@gmail.com<br>Phone : +91 9253733738<br>Address : 123 High Tower <br>                 Ernakulam <br>                 Kerala, 682021 <br> </pre>
+
+        
+            
+            
+
+        </section>
+
+        <script src="{% static 'assets1/script.js' %}"></script>
+
+        
+    </body>
+
+</html>
+
+    
